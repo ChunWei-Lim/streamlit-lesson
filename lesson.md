@@ -469,7 +469,7 @@ with st.expander("View Filtered Transactions"):
 
 ## **Section 6: The Rerun Model in Streamlit (25 min)**
 
-In this section, you will observe Streamlit's rerun behavior using your current dashboard.
+In this section, you will observe Streamlit's rerun behavior using your current dashboard. A rerun means the entire script executes again from top to bottom. This is a core concept in Streamlit that affects how you structure your code and manage state.
 
 ### **6.1 Demonstrate reruns**
 
@@ -488,7 +488,7 @@ Rerun triggers:
 
 - Changing widget values (`multiselect`, `slider`, `date_input`, `button`)
 
-Frontend-only actions:
+Frontend-only actions do not trigger reruns because they are handled entirely in the browser without needing to execute Python code again:
 
 - Sorting inside `st.dataframe`
 - Opening/closing `st.expander`
