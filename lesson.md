@@ -68,8 +68,6 @@ channels:
 dependencies:
   - python=3.11
   - pandas
-  - numpy
-  - matplotlib
   - pip
   - pip:
       - streamlit
